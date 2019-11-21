@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-nginx
+  labels:
+    app: web
+spec:
+  containers:
+    - name: hello-nginx
+      image: yanfaz/hello-nodejs:v1
+      ports:
+        - containerPort: 8080
